@@ -1,4 +1,8 @@
+import { IsInt, IsString } from "class-validator";
+
 export class BookDto{
-    id : string
+    @IsInt()
+    id : number
+    @IsString()
     name : string 
 }
